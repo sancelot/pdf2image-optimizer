@@ -51,7 +51,7 @@ apply_patch()
 
 # Now use pdf2image normally - it's automatically optimized!
 from pdf2image import convert_from_path
-images = convert_from_path("document.pdf")  # 3-8x faster on Windows!
+images = convert_from_path("document.pdf")  # faster on Windows!
 ```
 
 ### Option 2: Direct Usage
@@ -123,7 +123,7 @@ The optimizer automatically selects the best strategy, but you can choose manual
 | **`auto`** | All files | Auto-detects optimal strategy (recommended) |
 | **`single`** | Small files (≤5 pages) | Single-threaded processing |
 | **`batch`** | Medium files (6-20 pages) | Process in small batches |
-| **`async`** | Unix systems | Async I/O optimization |
+| **`async`** | Unix systems - or windows ;-) | Async I/O optimization |
 | **`memory`** | Large files (>50MB) | Memory-efficient streaming |
 
 ## 🪟 Windows-Specific Optimizations
