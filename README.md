@@ -10,7 +10,7 @@ I think the real issue would be to investigate in poppler code itself, however, 
 The popular `pdf2image` library suffers from significant performance issues on Windows when using multiple threads (often 2-4x slower than single-threading). This optimizer:
 
 - ✅ **Fixes Windows threading bottlenecks** - Automatically detects and optimizes for Windows
-- ✅ **3-8x faster conversions** on Windows systems
+- ✅ **faster conversions** on Windows systems
 - ✅ **Multiple optimization strategies** for different file sizes and use cases
 - ✅ **Drop-in replacement** - Works with existing `pdf2image` code
 - ✅ **Memory-efficient** processing for large PDFs
