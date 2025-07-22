@@ -314,7 +314,8 @@ class OptimizedPDFConverter:
             max_workers = min(4, max(1, self.cpu_count // 2))
             batch_size = batch_size or max(1, total_pages // max_workers)
         else:
-            max_workers = min(4, self.cpu_count)
+             # Unix systems: use up to 75% of cores, max 8 workers
+            max_workers = min(8, max(2, (self.cpu_count * 3) // 4))
             batch_size = batch_size or max(1, total_pages // max_workers)
 
         def convert_batch(start_page, end_page):
