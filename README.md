@@ -3,7 +3,7 @@
 🚀 **High-performance PDF to image converter optimized for Windows threading issues**
 
 A drop-in replacement and optimization layer for `pdf2image` that solves Windows threading bottlenecks and provides multiple conversion strategies for different use cases.
-I think the real issue would be to investigate in poppler code itself, however, this is a fast solving solution to memory error or slow conversion
+I think the real issue would be to investigate in poppler code itself, however, this is a  quick  solution to memory error or slow conversion
 
 ## 🎯 Problem Solved
 
