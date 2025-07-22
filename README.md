@@ -40,9 +40,9 @@ pip install pdf2image pillow
 - **macOS**: `brew install poppler`
 
 ## 🚀 Quick Start
+NB: I would suggest to launch benchmarks and then choose solution that will give best result suiting your documents
 
 ### Option 1: Drop-in Replacement (Recommended)
-
 ```python
 from pdf_optimizer import apply_patch
 
