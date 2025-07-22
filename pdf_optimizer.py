@@ -310,9 +310,9 @@ class OptimizedPDFConverter:
         # Calculate optimal batch size and worker count
         total_pages = last_page - first_page + 1
         if self.is_windows:
-            max_workers = min(2, max(1, self.cpu_count // 2)
-                              )  # Conservative on Windows
-            batch_size = batch_size or max(1, total_pages // (max_workers * 2))
+            # Conservative on Windows: use 25-50% of cores, max 4 workers
+            max_workers = min(4, max(1, self.cpu_count // 2))
+            batch_size = batch_size or max(1, total_pages // max_workers)
         else:
             max_workers = min(4, self.cpu_count)
             batch_size = batch_size or max(1, total_pages // max_workers)
