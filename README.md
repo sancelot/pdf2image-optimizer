@@ -18,7 +18,7 @@ The popular `pdf2image` library suffers from significant performance issues on W
 
 ## 📊 Performance Comparison
 
-📊 Speed improvement vs slowest: 2.7x
+📊 Speed improvement vs slowest: 2.7x  
 {'single': {'time': 878.5427498817444, 'pages': 3096, 'success': True, 'pages_per_second': 3.5240174714511445}, 
 'batch': {'time': 1024.443242073059, 'pages': 3091, 'success': True, 'pages_per_second': 3.017248660594476}, 
 'async': {'time': 448.80277943611145, 'pages': 3096, 'success': True, 'pages_per_second': 6.898353000152767}, 
