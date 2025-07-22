@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """
 Complete PDF to Image Converter Optimizer - Standalone Version
 Works without accessing internal pdf2image utilities
